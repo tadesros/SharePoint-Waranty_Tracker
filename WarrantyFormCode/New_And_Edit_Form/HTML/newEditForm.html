@@ -1,0 +1,575 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:mso="urn:schemas-microsoft-com:office:office"
+  xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+>
+  <head>
+    <title>RFQ</title>
+    <!--External CSS FILES-->
+    <link
+      href="../../SiteAssets/WARRANTY_CUSTOM_CODE/WarrantyFormCode/Supporting/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../SiteAssets/WARRANTY_CUSTOM_CODE/WarrantyFormCode/New_And_Edit_Form/CSS/style.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome 5-->
+    <link
+      href="../../SiteAssets/WARRANTY_CUSTOM_CODE/WarrantyFormCode/Supporting/fontawesome-free-5.15.4-web/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!--External JS Files-->
+    <script
+      type="text/javascript"
+      src="../../SiteAssets/WARRANTY_CUSTOM_CODE/WarrantyFormCode/Supporting/jquery-3.5.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../SiteAssets/WARRANTY_CUSTOM_CODE/WarrantyFormCode/Supporting/stratus-forms-1.55.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../SiteAssets/WARRANTY_CUSTOM_CODE/WarrantyFormCode/Supporting/stratus-forms-data-SPServices-1.55.js"
+    ></script>
+
+    <!--Popper JS-->
+    <script
+      type="text/javascript"
+      src="../../SiteAssets/WARRANTY_CUSTOM_CODE/WarrantyFormCode/Supporting/popper.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="../../SiteAssets/WARRANTY_CUSTOM_CODE/WarrantyFormCode/Supporting/bootstrap.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../SiteAssets/WARRANTY_CUSTOM_CODE/WarrantyFormCode/New_And_Edit_Form/JS/script.js"
+    ></script>
+    <!---
+  <script type="text/javascript" src="../../SiteAssets/RFQ_CODE/New_And_Edit_Form/JS/dptData.js"></script> --></head
+  ><!--/End Head-->
+
+  <body>
+    <!--Outside Container-->
+    <div id="contOutside" class="container container-fluid ml-1">
+    
+      <!--Header of Section-->
+      <div>
+        <h4 class="pageHeader">Warranty</h4>
+        <hr class="topHr" />
+      </div>
+
+      <!--Mandatory indicator-->
+      <div class="container mb-3 mt-3 pl-0">
+        <div class="row">
+          <div class="col">
+            <!--Mandatory indicator-->
+            <i
+              class="fas fa-asterisk fa-sm"
+              style="font-size: 9px; color: rgb(190, 54, 30)"
+            ></i>
+            <span
+              id="requiredSpan"
+              style="
+                color: rgb(20, 18, 18);
+                font-style: italic;
+                margin-left: 4px;
+              "
+            >
+              = required field
+            </span>
+          </div>
+
+          <div class="col-8"></div>
+        </div>
+      </div>
+      <!--/Mandatory Indicator-->
+
+      <!--First ROW-->         
+      <div class="form-row rowborderthick form-row-height-nar">
+            <!--FQE-->
+            <div class="form-group col-4">
+              <label class="control-label right-text redLabel"
+                >Field Quality Engineer</label
+              >
+              <div class="input-group input-group-sm">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"
+                    ><i class="fas fa-hard-hat"></i
+                  ></span>
+                </div>
+                <span
+                  class="StratusFormsTemplate"
+                  data-formfield="FQE"
+                  data-toggle="tooltip"
+                  id="idFldQualEng"
+                  data-placement="top"
+                  data-offset="10 5"
+                  title="Field Quality Engineer is a required Field"
+                ></span>
+              </div>
+            </div>
+
+            <!--OEM-->
+            <div  class="form-group col-4">
+              <label class="control-label right-text redLabel">OEM</label>
+              <div class="input-group input-group-sm">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"
+                    ><i class="fas fa-industry"></i
+                  ></span>
+                </div>
+                <span class="StratusFormsTemplate" data-formfield="OEM"></span>
+              </div>
+            </div>
+
+            <!--Ship to Customer-->
+            <div  class="form-group col-4">
+              <label class="control-label right-text redLabel">Ship to Customer</label>
+              <div class="input-group input-group-sm">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"
+                    ><i class="fas fa-user"></i
+                  ></span>
+                </div>
+                <span 
+                      class="StratusFormsTemplate" 
+                      data-formfield="Ship to Customer"
+                      data-toggle="tooltip"
+                      id="idShipToCust"
+                      data-placement="top"
+                      data-offset="10 5"
+                      title="Ship to Customer is a Required Field"     
+                ></span>
+              </div>
+            </div>
+
+      </div> <!--/First ROW-->
+
+      <!--Second ROW-->
+      <div  class="form-row rowborderthick form-row-height-nar">
+        <!--Program-->
+        <div class="form-group col-4">
+          <label class="control-label right-text redLabel ">Program</label>
+          <div class="input-group input-group-sm">
+            <div class="input-group-prepend">
+              <span class="input-group-text"
+                ><i class="fas fa-project-diagram"></i
+              ></span>
+            </div>
+            <span
+              class="StratusFormsTemplate"
+              data-formfield="Program"
+              data-toggle="tooltip"
+              id="idPrg"
+              data-placement="top"
+              data-offset="10 5"
+              title="Program is a Required Field"
+            ></span>
+          </div>
+        </div>
+
+        <!--OEM Claim Number-->
+        <div class="form-group col-4">
+          <label class="control-label right-text redLabel">OEM Claim Number</label>
+          <div class="input-group input-group-sm">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-hashtag"></i></span>
+            </div>
+            <span
+              class="StratusFormsTemplate"
+              data-formfield="OEM Claim Number"
+              data-toggle="tooltip"
+              id="idEmpClmNum"
+              data-placement="top"
+              data-offset="10 5"
+              title="OEM Claim Number is a Required Field"
+            ></span>
+          </div>
+        </div>
+
+        <!--Defect-->
+        <div class="form-group col-4">
+          <label class="control-label right-text redLabel">Defect</label>
+          <div class="input-group input-group-sm">
+            <div class="input-group-prepend">
+              <span class="input-group-text"
+                ><i class="fas fa-exclamation-triangle"></i
+              ></span>
+            </div>
+            <span
+              class="StratusFormsTemplate"
+              data-formfield="Defect"
+              data-toggle="tooltip"
+              id="idDefect"
+              data-placement="top"
+              data-offset="10 5"
+              title="Defect is a Required Field"
+            ></span>
+          </div>
+        </div>
+
+      </div><!--/Second ROW-->
+     
+      <!--Third ROW-->
+      <div  class="form-row rowborderthick form-row-height-nar">
+        <!--Part Number-->
+        <div class="form-group col-4">
+          <label class="control-label right-text redLabel">Part Number</label>
+          <div class="input-group input-group-sm">
+            <div class="input-group-prepend">
+              <span class="input-group-text"
+                ><i class="fas fa-hashtag"></i
+              ></span>
+            </div>
+            <span
+              class="StratusFormsTemplate"
+              data-formfield="Part Number"
+              data-toggle="tooltip"
+              id="idPartNumber"
+              data-placement="top"
+              data-offset="10 5"
+              title="Part Number is a Required Field"
+            ></span>
+          </div>
+        </div>
+
+        <!--Vehicle Model-->
+        <div class="form-group col-4">
+          <label class="control-label right-text redLabel">Vehicle Model</label>
+          <div class="input-group input-group-sm">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-car"></i></span>
+            </div>
+            <span
+              class="StratusFormsTemplate"
+              data-formfield="Vehicle Model"
+              data-toggle="tooltip"
+              id="idVehModel"
+              data-placement="top"
+              data-offset="10 5"
+              title="Vehicle Model is not a required field"
+            ></span>
+          </div>
+        </div>
+
+        <!--Mileage-->
+        <div class="form-group col-4">
+          <label class="control-label right-text redLabel">Mileage</label>
+          <div class="input-group input-group-sm">
+            <div class="input-group-prepend">
+              <span class="input-group-text"
+                ><i class="fas fa-tachometer-alt"></i
+              ></span>
+            </div>
+            <span
+              class="StratusFormsTemplate"
+              data-formfield="Mileage"
+              data-toggle="tooltip"
+              id="idMileage"
+              data-placement="top"
+              data-offset="10 5"
+              title="Mileage is a Required"
+            ></span>
+          </div>
+        </div>
+
+      </div><!--/Third ROW-->
+
+      <!--Fourth ROW-->
+      <div  class="form-row rowborderthick form-row-height-nar">
+
+        <!--Build Date-->
+        <div class="form-group col-4">
+          <label class="control-label right-text redLabel">Build Date</label>
+          <div class="input-group input-group-sm">
+            <div class="input-group-prepend">
+              <span class="input-group-text"
+                ><i class="fas fa-calendar"></i
+              ></span>
+            </div>
+            <span
+              class="StratusFormsTemplate"
+              data-formfield="Build Date"
+              data-toggle="tooltip"
+              id="idBuildDate"
+              data-placement="top"
+              data-offset="10 5"
+              title="Build Date is a Required Field"
+            ></span>
+          </div>
+        </div>
+
+        <!--Repair Location-->
+        <div class="form-group col-4">
+          <label class="control-label right-text redLabel">Repair Location</label>
+          <div class="input-group input-group-sm">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-tools"></i></span>
+            </div>
+            <span
+              class="StratusFormsTemplate"
+              data-formfield="Repair Location"
+              data-toggle="tooltip"
+              id="idRepLocation"
+              data-placement="top"
+              data-offset="10 5"
+              title="Repair Location is a Required Field"
+            ></span>
+          </div>
+        </div>
+
+        <!--Repair Date-->
+        <div class="form-group col-4">
+          <label class="control-label right-text redLabel">Repair Date</label>
+          <div class="input-group input-group-sm">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-calendar"></i></span>
+            </div>
+            <span
+              class="StratusFormsTemplate"
+              data-formfield="Repair Date"
+              data-toggle="tooltip"
+              id="idRepairDate"
+              data-placement="top"
+              data-offset="10 5"
+              title="Repair Date is a Required Field"
+            ></span>
+          </div>
+        </div>  
+
+      </div>
+      <!--/Fourth ROW-->
+
+      <!--Fifth ROW-->
+      <div  class="form-row rowborderthick form-row-height-nar">
+
+        <!--Customer Narrative-->
+          <div class="form-group col-12">
+            <label class="control-label right-text redLabel">Customer Narrative</label>
+            <div class="input-group input-group-sm">
+            
+              <span
+                class="StratusFormsTemplate"
+                data-formfield="Customer Narrative"
+                data-toggle="tooltip"
+                id="idCustNarrative"
+                data-placement="top"
+                data-offset="10 5"
+                title="Customer Narrative is a required field"
+              ></span>
+            </div>
+          </div>
+
+      </div><!--/Fifth ROW-->
+
+      <!--Sixth ROW-->
+      <div  class="form-row rowborderthick form-row-height-nar">
+
+        <!--Max Response Time-->
+        <div class="form-group col-4">
+          <label class="control-label right-text redLabel">Max Response Time</label>
+          <div class="input-group input-group-sm">
+            <div class="input-group-prepend">
+              <span class="input-group-text"
+                ><i class="fas fa-stopwatch"></i
+              ></span>
+            </div>
+            <span
+              class="StratusFormsTemplate"
+              data-formfield="Max Response Time"
+              data-toggle="tooltip"
+              id="idMaxResponseTime"
+              data-placement="top"
+              data-offset="10 5"
+              title="Max Response Time is a required field"
+            ></span>
+          </div>
+        </div>
+
+        <!--Warranty Leader-->
+        <div class="form-group col-4">
+          <label class="control-label right-text redLabel">Warranty Leader</label>
+          <div class="input-group input-group-sm">
+            <div class="input-group-prepend">
+              <span class="input-group-text"
+                ><i class="fas fa-user"></i
+              ></span>
+            </div>
+            <span
+              class="StratusFormsTemplate"
+              data-formfield="Warranty Leader"
+              data-toggle="tooltip"
+              id="idWarrLeader"
+              data-placement="top"
+              data-offset="10 5"
+              title="Warranty leader is a required field"
+            ></span>
+          </div>
+        </div>
+
+        <!--Pangea Facility-->
+        <div class="form-group col-4">
+          <label class="control-label right-text redLabel">Pangea Facility</label>
+          <div class="input-group input-group-sm">
+            <div class="input-group-prepend">
+              <span class="input-group-text"
+                ><i class="fas fa-map-marker-alt"></i
+              ></span>
+            </div>
+            <span
+              class="StratusFormsTemplate"
+              data-formfield="Pangea Facility"
+              data-toggle="tooltip"
+              id="idPangFacility"
+              data-placement="top"
+              data-offset="10 5"
+              title="Mileage"
+            ></span>
+          </div>
+        </div>
+
+      </div>
+      <!--/Sixth ROW-->
+
+      <!--Section Header and Horizontal Line-->
+      <div class="mt-5" id="warrLeaderId">
+        <h4>Warranty Leader Section</h4>
+        <hr>
+      </div>
+       
+      <!--Seventh ROW-->
+      <div class="form-row rowborderthick form-row-height-nar" id="seventhRowId">
+
+        <!--PSR Number-->
+        <div class="form-group col-4">
+          <label class="control-label right-text">PSR Number</label>
+          <div class="input-group input-group-sm">
+            <div class="input-group-prepend">
+              <span class="input-group-text"
+                ><i class="fas fa-hashtag"></i
+              ></span>
+            </div>
+            <span
+              class="StratusFormsTemplate"
+              data-formfield="PSR Number"
+              data-toggle="tooltip"
+              id="idEmpAttToLoc2"
+              data-placement="top"
+              data-offset="10 5"
+              title="Mileage"
+            ></span>
+          </div>
+        </div>
+
+        <!--Warranty Report Published?-->
+        <div class="form-group col-4">
+          <label class="control-label right-text">Warranty Report Published?</label>
+          <div class="input-group input-group-sm">
+            <div class="input-group-prepend">
+              <span class="input-group-text"
+                ><i class="fas fa-question-circle"></i
+              ></span>
+            </div>
+            <span
+              class="StratusFormsTemplate"
+              data-formfield="Warranty Report Published?"
+            ></span>
+          </div>
+        </div>
+
+        <!--Accepted-->
+        <div class="form-group col-4">
+          <label class="control-label right-text ">Accepted</label>
+          <div class="input-group input-group-sm">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-question-circle"></i></span>
+            </div>
+            <span
+              class="StratusFormsTemplate"
+              data-formfield="Accepted"
+              data-toggle="tooltip"
+              id="idEmpAttToLoc"
+              data-placement="top"
+              data-offset="10 5"
+              title="Repair Date"
+            ></span>
+          </div>
+        </div>  
+
+      </div>
+      <!--/Seventh ROW-->
+   
+      <!--Eight ROW-->
+      <div class="form-row rowborderthick form-row-height-nar" id="eightRowId">
+
+        <!--Status-->
+        <div class="form-group col-4">
+          <label class="control-label right-text ">Status</label>
+          <div class="input-group input-group-sm">
+            <div class="input-group-prepend">
+              <span class="input-group-text"
+                ><i class="far fa-calendar-plus"></i
+              ></span>
+            </div>
+            <span
+              class="StratusFormsTemplate"
+              data-formfield="Status"
+              data-toggle="tooltip"
+              id="idEmpAttToLoc2"
+              data-placement="top"
+              data-offset="10 5"
+              title="Status"
+            ></span>
+          </div>
+        </div>
+
+        <!--Root cause found-->
+        <div class="form-group col-6">
+          <label class="control-label right-text">Root Cause Found</label>
+          <div class="input-group input-group-sm">
+            <div class="input-group-prepend">
+              <span class="input-group-text"
+                ><i class="fas fa-info-circle"></i
+              ></span>
+            </div>
+            <span
+              class="StratusFormsTemplate"
+              data-formfield="Root Cause Found"
+            ></span>
+          </div>
+        </div> 
+
+      </div>
+      <!--/Eight ROW-->
+
+      <!--Ninth Row-->
+      <div class="form-row rowborderthick form-row-height-nar">
+        <!--Additional Comments-->
+        <div class="form-group col-12">
+          <label class="control-label right-text">Additional Comments</label>
+          <div class="input-group input-group-sm">
+           
+            <span
+              class="StratusFormsTemplate"
+              data-formfield="Additional Comments"
+              data-toggle="tooltip"
+              id="idAddComments"
+              data-placement="top"
+              data-offset="10 5"
+              title="Status"
+            ></span>
+          </div>
+        </div>
+      </div>
+      <!--/Ninth Row-->
+
+    </div>
+    <!--/Outside Container-->
+  </body>
+  <!--/End Body-->
+</html>
+<!--/End HTML-->

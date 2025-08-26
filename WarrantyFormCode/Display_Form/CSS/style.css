@@ -1,0 +1,91 @@
+    input[value="Close"] {
+        background-color: white;
+        border-radius: 4px;
+        border: 2px solid #555555;
+        color: black;
+        padding: 6px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 3px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+    input[value="Close"]:hover {
+        background-color: #555555;
+        color: white;
+    }
+
+    .ms-formlabel,
+    .ms-standardheader {
+        font-weight: bold;
+        text-align: left;
+        padding-right: 10px;
+    }
+
+    div#s4-ribbonrow {
+        display: none;
+    }
+
+    /********************* NEW CODE UPdATED 10-15 ***************/
+
+    /* Hide some of the default text at the bottom */
+    /* Hide the last modified by section */
+    #onetidinfoblockV,
+    #onetidinfoblock2,
+    #part1>table:nth-child(5)>tbody>tr>td>table:nth-child(2)>tbody>tr {
+        display: none;
+    }
+
+    /* Make the created by Larger Font */
+    #onetidinfoblock1 {
+        font-size: 18px;
+    }
+
+    /***********************************************************/
+
+    #btnPrintItem {
+        background-color: white;
+        /* white */
+        border: 2px solid green;
+        color: black;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition-duration: 0.7s;
+    }
+
+    #btnPrintItem:hover {
+        background: #e4eefc;
+        color: black;
+        cursor: pointer;
+    }
+
+    /*Alternate CSS for print view*/
+    @media print {
+        .noPrint {
+            display: none !important;
+            height: 0 !important;
+        }
+
+        /*Hide Button: Close*/
+        input[value="Close"] {
+            display: none;
+        }
+
+        * {
+            -webkit-print-color-adjust: exact !important;
+            /*Chrome, Safari */
+            color-adjust: exact !important;
+            /*Firefox*/
+        }
+    }
+
+    /*End of Media Print*/

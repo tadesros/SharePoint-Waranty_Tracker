@@ -1,0 +1,194 @@
+﻿#contOutside {
+  width: 1200px;
+}
+
+.ms-webpart-zone.ms-fullWidth {
+  width: 80% !important;
+}
+/* Move the bottom buttons to the right*/
+#WebPartWPQ2 {
+  padding-left: 15px;
+}
+/*Hide the default sharePoint Ribbon*/
+#s4-ribbonrow {
+  display: none;
+}
+
+/*Move Contents to the right*/
+#DeltaPlaceHolderMain {
+  padding-left: 100px;
+}
+
+/*Fix Input Widths*/
+[title="FQE"],
+[title="OEM"],
+[title="Ship to Customer"],
+[title="Program"],
+[title="OEM Claim Number"],
+[title="Defect"],
+[title="Part Number"],
+[title="Vehicle Model"],
+[title="Mileage"],
+[title="Build Date"],
+[title="Repair Location"],
+[title="Pangea Facility"],
+[title="Warranty Leader"],
+[title="Repair Date"],
+[title="Max Response Time"],
+[title="PSR Number"],
+[title="Accepted"],
+[title="Warranty Report Published?"],
+[title="Status"]
+{
+  /* height: 27px !important;*/
+  width: 300px !important;
+}
+
+
+
+/*Fix Input Widths*/
+[title="Root Cause Found"] {
+  /* height: 27px !important; */
+  width: 510px !important;
+}
+
+/*STYLE BUTTONS*/
+input[value="Save"],
+input[value="Cancel"] {
+  border: none;
+  padding: 8px 25px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.7s;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+[title="Select Supplier"],
+[title="Chosen Supplier"] {
+  /* height: 27px !important;*/
+  width: 330px !important;
+}
+
+
+textarea[title="Customer Narrative"],
+textarea[title="Additional Comments"] {
+  resize: vertical !important; /* Allow vertical dragging */
+  width: 1075px !important;
+  height: 200px; /* Optional: smaller initial size */
+  max-height: 400px; /* Optional: limit growth */
+}
+
+
+
+
+
+
+
+/*Save Buttons*/
+input[value="Save"] {
+  background-color: white;
+  color: black;
+  border: 2px solid #80bdff;
+}
+input[value="Save"]:hover:enabled {
+  background-color: #80bdff;
+  color: white;
+}
+/*Cancel button Styles */
+input[value="Cancel"] {
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+}
+input[value="Cancel"]:hover {
+  background-color: #e7e7e7;
+  border: 2px solid #e7e7e7;
+}
+/*END STYLE BUTTONS*/
+
+/* STYLE FIELDS THAT ARE POPULATED AUTOMATICALLY DUMMY FIELDS*/
+.dummy {
+  height: 23px !important;
+  border-color: #a8a5a5;
+  pointer-events: none !important;
+  background-color: #e9ecef;
+}
+/*ToolTips if Used*/
+/***TOOLTIPS***/
+.tooltip {
+  left: 40x !important;
+  top: 4px !important;
+}
+.tooltip-inner {
+  background-color: #923434 !important;
+}
+.tooltip-inner {
+  background-color: #923434;
+}
+.tooltip.bs-tooltip-right .arrow:before {
+  border-right-color: #923434 !important;
+}
+.tooltip.bs-tooltip-left .arrow:before {
+  border-left-color: #923434 !important;
+}
+.tooltip.bs-tooltip-bottom .arrow:before {
+  border-bottom-color: #923434 !important;
+}
+.tooltip.bs-tooltip-top .arrow:before {
+  border-top-color: #923434 !important;
+}
+.tooltip-inner {
+  padding: 2px 7px;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  border: 3px solid #923434;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+
+/* Mandatory Labels */
+.redLabel::after {
+  content: "*";
+  color: red;
+}
+
+.weirdTextBox {
+  margin-bottom: 8px !important;
+}
+
+.headsUp {
+  width: 750px !important;
+  font: bold;
+  color: black;
+}
+
+.topHr {
+  margin-bottom: 0rem !important;
+  margin-top: 0rem !important;
+  border-color: #123c69;
+}
+.pageHeader {
+  color: #123c69 !important;
+}
+
+/* Adjust input group height */
+.adjustInputGroupHeight {
+  height: 23px;
+}
+
+.disabled {
+  pointer-events: none !important;
+  opacity: 0.5;
+}
+
+
+/**H5 Headers**/
+h5 {
+  margin-left: 0px;
+  color: #123c69 !important;
+}
